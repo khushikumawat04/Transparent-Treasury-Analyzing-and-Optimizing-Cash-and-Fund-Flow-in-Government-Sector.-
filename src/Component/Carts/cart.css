@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.cart-container{
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   /* background-color: aliceblue; */
+   /* background: rgb(1,49,54);
+background: linear-gradient(0deg, rgba(1,49,54,1) 80%, rgba(245,240,225,1) 80%); */
+   padding: 50px 0;
+}
+.view-more{
+    background: rgb(1,49,54);
+background: linear-gradient(0deg, rgba(1,49,54,1) 88%, rgba(245,240,225,1) 88%);
+}
+.view-less{
+    background: rgb(1,49,54);
+background: linear-gradient(0deg, rgba(1,49,54,1) 75%, rgba(245,240,225,1) 75%);
+}
+.cart-container h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: #013136;
+    text-align: center;
+}
+.cart-sumcont{
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    
+}
+
+/* for card hover */
+.form-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    /* background-color: rgba(245,240,225,0.9); */
+    /* background-color: #f5f0e1; */
+    /* background-color: #000; */
+    /* opacity: 0.7; */
+    backdrop-filter: blue(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+}
+/* .blue-box{
+      background-color: rgba(245,240,225,0.9);
+} */
+/* code for form box start */
+.form-state{
+    width: 200px;
+    height: 30px;
+    border: none;
+    outline: none;
+    margin: 0 0 10px 0;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 5px;
+    align-items: center;
+    border-right: 5px solid #fff;
+}
+.blue-state{
+    /* border: 2px solid #0a3543; */
+    border-right: 5px solid #fff;
+}
+.form-box button{
+    width: 45%;
+    height: 28px;
+    outline: none;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff6e40;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-box button:hover{
+    background-color: #ff6e40;
+    color: #fff;
+}
+.form-box button .link{
+    color: #fff;
+}
+/* code for form box end */
+
+/* codes for card box start */
+.cart-box{
+    padding: 30px 0;
+    position: relative;
+    /* background-color: #0a3543; */
+    background-color: #e9eef2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 2px 0;
+    /* border: 2px solid #f5f0e1; */
+}
+.blue{
+    background-color:  #013136;
+    color: #fff; 
+    border: 2px solid #f5f0e1;
+}
+.cart-box .blue-text{
+    color: #fff;
+}
+.cart-box .blue-no{
+    color: #e9eef2;
+}
+.cart-box .budg-box .blue-budg{
+    color: #e9eef2;
+    opacity: 0.7;
+}
+.cart-box:hover .form-box{
+    right: 0;
+    transition: all ease 0.5s;
+    transition-delay: 0.4s;
+}
+.cart-box a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .cart-box a i{
+    font-size: 50px;
+    color: #fff;
+} */
+.cart-box a img{
+    height: 60px;
+    width: 60px;
+}
+.cart-box h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: #0a3543;
+    text-align: center;
+    width: 80%;
+}
+
+.budg-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cart-box .budg-box h3{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    /* color: #888; */
+    color: #0a3543;
+    opacity: 0.7;
+}
+.budg-box h2{
+    font-size: 17px;
+    color: #0a3543;
+    text-align: center;
+}
+.cart-btn{
+    display: flex;
+    height: auto;
+    padding: 0 0 30px 0;
+    background-color: #013136;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0 10px;
+}
+.cart-btn button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #ff6e40;
+    border-radius: 20px;
+    color: #f5f0e1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.cart-btn button:hover{
+    background-color: #ff6e40;
+    color: #fff;
+}
+.form-state-box h5{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+/* codes for card box end */
+
+@media screen and (max-width: 1120px) {
+    .cart-sumcont{
+        width: 80%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+}
+@media screen and (max-width: 898px) {
+    .cart-sumcont{
+        width: 90%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    .form-state{
+        width: 160px;
+        height: 30px;
+    }
+    
+}
+@media screen and (max-width: 698px) {
+    .cart-sumcont{
+        width: 80%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+}
+@media screen and (max-width: 599px) {
+    .cart-sumcont{
+        width: 95%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 5px;
+    }
+    .cart-box a img{
+        width: 50px;
+        height: 50px;
+    }
+    .cart-box h3{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .blue-budg h3, h2{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .form-state{
+        width: 140px;
+        height: 30px;
+    }
+    .form-box button{
+        width: 75px;
+        height: 25px;
+    }
+
+    
+
+}
+@media screen and (max-width: 399px) {
+     .cart-sumcont{
+        width: 90%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+    .form-state{
+        width: 120px;
+        height: 25px;
+    }
+    
+    
+}

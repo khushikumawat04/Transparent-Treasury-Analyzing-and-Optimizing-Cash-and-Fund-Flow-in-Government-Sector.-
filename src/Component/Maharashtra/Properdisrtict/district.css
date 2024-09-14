@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+/* card css box start */
+.cbig{
+    height: auto;
+    padding: 50px 0;
+    background-color: #fff;
+}
+.cbox{
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.small{
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+   /* background-color: hsl(0, 3%, 24%); */
+   padding: 50px 20px;
+}
+.sc-box{
+   display: flex;
+   height: 150%;
+   align-items: center;
+   justify-content: center;
+   background: #fff;
+   border-radius: 0 40px 0 40px;
+   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+   /* box-shadow: 5px 2px 18px rgb(14 52 54 / 15%); */
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+
+ 
+
+}
+.sc-box h4{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ff6e40;
+    /* color: #ff6e40; */
+    text-align: center;
+    padding: 3px 0;
+    font-weight: 600;
+}
+.sc-box h4 span{
+    font-size: medium;
+    font-weight: 500;
+    color: #0a3543;
+    /* color:#3e3e3e; */
+    /* color: #fff; */
+}
+@media screen and (max-width: 1100px) {
+    .small{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }   
+}
+
+@media screen and (max-width: 299px) {
+    .small{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }   
+}
+/* card css box end */
+
+
+.tehsil-title-container{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 0 0 20px;
+  background-color: #0a3543;
+}
+.tehsil-title-container span{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+.tehsil-img-container h3{
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+}
+/*  tehsil img container */
+.tehsil-img-container{
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    background-image: url("../../Nextpage/img/FLAG.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 20px 0 0 0;
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    /* background-color: lightblue; */
+}
+.tehsil-img-container .tic-wavs{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+/* linear-gradient(rgba(0,0,0,0.33),rgba(0,0,0,0.33)) */
+/* tehsil text container */
+.tehsil-text-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.tehsil-sub-text{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.table-container{
+    background-color: #fff;
+}
+
+
+.tehsil-text-container h1{
+    font-size: 30px;
+    font-weight: 400;
+    color: #ff6e40;
+    padding: 5px 0 10px 0;
+    text-transform: capitalize;
+}
+.tehsil-text-container h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: #2dcd7c;
+    padding: 5px 0 10px 0;
+}
+.tehsil-text-container p{
+    font-size: 15px;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    color: #000;
+    opacity: 0.6;
+}
+
+
+/* for search option start */
+.table-search{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #0a3543;
+}
+.table-search input{
+    width: 60%;
+    height: 40px;
+    background-color: #eee;
+    padding: 0 28px;
+    border: none;
+    outline: none;
+    color: #333;
+}
+/* for search option end */
+
+.tehsil-table{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
+   
+}
+.tehsil-table button{
+    width: 140px;
+    height: 40px;
+    background-color: #2dcd7c;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.tehsil-table button span{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.table-box{
+    width: 80%;
+    min-height: 60vh;
+    margin: 0 auto;
+   
+}
+.table-mini-box{
+    height: 50px;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+}
+.box{
+    text-align: center;
+    background-color: #0a3543;
+    /* border: 0.5px solid #888; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5f0e1;
+}
+
+.table-mini-box2{
+    height: 45px;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    cursor: pointer;
+    transition: all ease 0.2s;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-bottom:1px solid #ddd;
+   
+
+}
+.table-mini-box2:hover{
+    margin: 5px 0;
+    background-color: #fff;
+    box-shadow: 5px 2px 18px rgb(14 52 54 / 15%);
+
+}
+.sbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #0a3543;
+}
+
+
+@media  screen and (max-width: 999px){
+
+
+    .table-search{
+        width: 80%;
+        height: 50px;
+    }
+    .table-search input{
+        width: 90%;
+        height: 35px;
+        padding: 0 20px;
+        margin: 0 0 0 15px;
+    }
+    .sub-box{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .tehsil-table{
+        width: 90%;
+    }
+    .tehsil-img-container{
+        width: 100%;
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .table-search{
+        width: 100%;
+        height: 50px;
+    }
+    .tehsil-title-container span{
+        width: 40px;
+        height: 40px;
+        top: 20%;
+        left: 10px;
+        font-size: 18px;
+    }
+    .tehsil-text-container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .table-box{
+        width: 100%;
+    }
+    .tehsil-title-container h3{
+        font-size: 40px;
+    }
+    .box{
+        font-size: 15px;
+    }
+    .sbox{
+      font-size: 12px;
+    }
+    .tehsil-text-container h1{
+        font-size: 25px;
+    }
+    .tehsil-text-container h4{
+        font-size: 18px;
+    }
+    .tehsil-table{
+        width: 96%;
+    }
+}

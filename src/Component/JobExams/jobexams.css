@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* code for page title */
+.jobexam-container {
+  max-width: 100%;
+  height: auto;
+  padding: 20px 0;
+  background-color: #f5f0e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jobexam-box {
+  width: 80%;
+  height: auto;
+  padding: 20px 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  justify-content: center;
+}
+.jobexam-box h1 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #0a3543;
+  padding: 20px 0 10px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+}
+.jobexam-box hr {
+  width: 180px;
+  height: 3px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  background-color: #2dcd7c;
+}
+.jobexam-box p {
+  font-size: 18px;
+}
+
+/* code for page slider section  */
+.page-slider-container {
+  background-color: #f5f0e1;
+  padding: 20px 0;
+}
+.psc-card2 {
+  width: 70%;
+  margin: 0 auto;
+}
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+/* slider headding */
+.psc-head {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+.psc-head h1 {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #0a3543;
+  padding: 5px 0;
+}
+.psc-head hr {
+  width: 180px;
+  height: 3px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  background-color: #2dcd7c;
+}
+/* sliders cards */
+.psc-cards {
+  /* background:#1e3d59; */
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #0a3543;
+  box-shadow: 2px 4px 2px gray;
+  width: 200px;
+  height: 140px;
+  border-radius: 22px;
+}
+.psc-cards-sub{
+  /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px 0;
+}
+/* .psc-cards  h1{
+    margin-left: 25%;
+}
+.psc-cards-icon2{
+    margin-left: 60PX;
+} */
+/* .psc-cards-icon2 {
+  margin-left: 130px;
+} */
+.psc-cards h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  /* margin-left: 130px; */
+}
+
+/* sliders second cards  */
+.psc-slider-cards2 {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  background-color: #f5f0e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.psc-slider-cards2 i img {
+  height: 70px;
+  width: 70px;
+}
+.psc-cards2-box {
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 12px 20px;
+}
+.psc-cards2-card {
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.psc-cards2-card i {
+  font-size: 50px;
+}
+.psc-cards2-card h1 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0a3543;
+  /* border: 2px solid red; */
+  text-decoration: none;
+}
+.psc-cards-icon2{
+  height: 60px;
+  width: 80px;
+}
+@media screen and (max-width: 998px) {
+  .psc-cards2-box {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px 16px;
+  }
+}
+@media screen and (max-width: 698px) {
+  .psc-cards2-box {
+    width: 98%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+  .jobexam-box {
+    width: 98%;
+    padding: 20px 0;
+  }
+  .jobexam-box p {
+    width: 98%;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  .jobexam-box h1 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #0a3543;
+    padding: 10px;
+  }
+  .jobexam-box hr {
+    width: 80px;
+    height: 2px;
+  }
+  .jobexam-box p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 349px) {
+  .psc-cards2-box {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  .jobexam-box {
+    width: 100%;
+    padding: 10px 0;
+  }
+}

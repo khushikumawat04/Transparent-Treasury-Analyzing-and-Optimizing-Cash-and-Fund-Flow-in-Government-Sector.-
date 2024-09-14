@@ -1,0 +1,87 @@
+body{
+    background-color: #f5f0e1;
+}
+.large-box{
+    margin: 5% 3% auto 4%;
+    width: auto;
+    height: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #fff;
+}
+.contactheading{
+    text-align: center;
+    color: #0a3543;
+}
+.container form{
+    padding: 30px 0 0 0 0;
+}
+.container form .form-row{
+    display: flex;
+    margin: 32px 0;
+    
+
+}
+ form .form-row .input-data{
+    width: 100%;
+    height: 40px;
+    margin:  0 20px;
+    position: relative;
+    z-index: 0;
+ }
+ form .form-row .textarea{
+    height: 70px;
+
+ }
+ .input-data input, .textarea textarea{
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+ }
+ .input-data label{
+    position: absolute;
+    bottom: 10px;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+ }
+ .textarea label{
+    width: 100%;
+    bottom: 30px;
+    background-color: #fff;
+ }
+ .textarea textarea{
+    resize:  none;
+    padding-top: 10px;
+ }
+ .input-data input:focus ~ label, .textarea textarea:focus ~ label,
+ .input-data input:valid ~ label, .textarea textarea:valid ~ label
+ {
+    transform: translateY(-30px);
+    color: #3498db;
+    font-size: 14px;
+ }
+.submit-btn .input-data{
+    height: 45px!important;
+    width: 85px!important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.submit-btn .input-data input{
+    z-index: 2;
+    background: #0a3543;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+@media screen and (max-width: 550px){
+    .contactimage{
+        display: none;
+    }
+}

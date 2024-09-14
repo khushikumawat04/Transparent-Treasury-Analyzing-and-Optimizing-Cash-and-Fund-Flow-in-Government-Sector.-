@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.bankexams-container{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background-color: #f5f0e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bankexams-box{
+    width: 80%;
+    height: auto;
+    padding: 20px 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: center;
+}
+.bankexams-box h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: #0a3545;
+    padding: 20px 0 10px 0;
+    text-transform: uppercase;
+}
+.bankexams-box hr{
+    width: 140px;
+    height: 3px;
+    margin: 0 0 0 20px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: #0a3545;
+}
+.bankexams-box p{
+    font-size: 18px;
+}
+
+/* bank Exams cards section  */
+.bankexams-cards-section{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f0e1;
+}
+.bankeams-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 1px;
+    cursor: pointer;
+}
+/* codes for page cards headding */
+.bcb-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a3545;
+    color: #fff;
+    padding: 10px 20px;
+}
+.bcb-main h4{
+    font-weight: 400;
+    font-size: 18px;
+}
+/* codes for page cards */
+.bankexams-card-box{
+    width: 100%;
+    height: auto;
+    padding: 16px 70px;
+    display: flex;
+ 
+}
+.bankexams-card-box span{
+    font-size: 20px;
+    padding: 0 10px;
+}
+.bankexams-card-box span img{
+    height: 40px;
+    width: 40px;
+}
+.bankexams-card-box h4{
+    font-size: 17px;
+    font-weight: 500;
+  
+}
+.bcb-box1{
+    background-color: #e9eef2;
+    color: #0a3545;
+}
+.bcb-box2{
+    background-color: #c7c7c7;
+    color: #0a3545;
+}
+
+
+@media screen and (max-width: 678px) {
+    .bankexams-box{
+        width: 92%;
+        font-size: 10px;
+    }
+    .bankexams-card-box span{
+        font-size: 16px;
+        padding: 0 8px;
+    }
+    .bankexams-card-box h4{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .bankexams-card-box{
+        width: 100%;
+        height: auto;
+        padding: 16px 0px;
+        display: flex;
+    }
+    
+}

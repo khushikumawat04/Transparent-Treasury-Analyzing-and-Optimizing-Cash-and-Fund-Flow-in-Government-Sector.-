@@ -1,0 +1,65 @@
+.App01 {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+  z-index: -1;
+}
+.App01 h1{
+  text-align: center;
+  color: #013136;
+  font-size: 35px;
+  margin: 0 0 20px 0;
+  /* margin: 1rem; */
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+
+.successfullstory {
+  border: 1px solid #fff;
+  /* background:#1e3d59; */
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 500px;
+  height: 220px;
+  box-shadow: 2px 4px 2px gray;
+}
+.sfs-box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px 0;
+  color: #fff;
+  cursor: pointer;
+  background-color: #013136;
+}
+.card-bottom01 {
+  margin: 10px 20px;
+  font-size: 16px;
+  /* color: red; */
+}
+.successstory-btn{
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 400;
+  background-color: #2dcd7c;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.successstory-btn a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+.card-top01 img{
+  width: 60px;
+  height: 60px;
+}
